@@ -111,7 +111,7 @@ RAG/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/<username>/offline-enterprise-pdf-rag.git
+git clone https://github.com/HimanshuKumarTech/offline-enterprise-pdf-rag.git
 
 cd offline-enterprise-pdf-rag
 ```
