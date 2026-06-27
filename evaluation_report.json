@@ -1,0 +1,153 @@
+{
+  "summary": {
+    "model": "qwen2.5:0.5b",
+    "num_queries": 5,
+    "top_k": 2,
+    "latency_avg_s": 8.18449166000355,
+    "latency_p95_s": 12.319368099997519,
+    "first_token_avg_s": 5.122759280004539,
+    "first_token_p95_s": 7.841751700005261,
+    "r_at_k": 1.0,
+    "mrr": 1.0,
+    "expected_fact_recall": 0.7894736842105263,
+    "hallucination_rate": 0.0,
+    "citation_accuracy": 0.0,
+    "citation_coverage": 0.0
+  },
+  "rows": [
+    {
+      "query": "explain Plant Turndown Capacity",
+      "retrieved_pages": [
+        5,
+        2
+      ],
+      "expected_page_rank": 1,
+      "r_at_k": true,
+      "mrr": 1.0,
+      "latency_s": 9.44879480000236,
+      "first_token_s": 7.841751700005261,
+      "expected_fact_hits": 5,
+      "expected_fact_total": 5,
+      "unsupported_numeric_claims": [],
+      "numeric_claims": [
+        "50",
+        "40",
+        "50",
+        "50",
+        "40",
+        "50"
+      ],
+      "citation_mentions": [],
+      "citation_accuracy": 0.0,
+      "citation_present": false,
+      "hallucinated": false,
+      "answer": "The Plant Turndown Capacity is defined as follows:\n\n\u2022 NHT Unit: 50% of design capacity\n\u2022 PENEX Unit: 40% of design capacity\n\u2022 CCR Platforming Unit: 50% of design capacity\n\nThis means that the units are designed to handle a turndown ratio (minimum operational hydraulic capacity) of 50%, 40%, and 50% respectively."
+    },
+    {
+      "query": "explain stream Hours and Turndown Ratio",
+      "retrieved_pages": [
+        5,
+        3
+      ],
+      "expected_page_rank": 1,
+      "r_at_k": true,
+      "mrr": 1.0,
+      "latency_s": 3.893718000006629,
+      "first_token_s": 2.479449200007366,
+      "expected_fact_hits": 2,
+      "expected_fact_total": 3,
+      "unsupported_numeric_claims": [],
+      "numeric_claims": [
+        "8000",
+        "100",
+        "3",
+        "365",
+        "1095"
+      ],
+      "citation_mentions": [],
+      "citation_accuracy": 0.0,
+      "citation_present": false,
+      "hallucinated": false,
+      "answer": "- Stream Hours and Turndown Ratio:\n  - The units are designed for an on-stream factor of 8000 hours per annum.\n  - This means that the units operate continuously at 100% capacity during their entire operational cycle, which is to process 3 x 365 = 1095 days of design feed stock."
+    },
+    {
+      "query": "explain NAPHTHA HYDROTREATER UNIT",
+      "retrieved_pages": [
+        5,
+        5
+      ],
+      "expected_page_rank": 1,
+      "r_at_k": true,
+      "mrr": 1.0,
+      "latency_s": 7.760666500020307,
+      "first_token_s": 4.322333500022069,
+      "expected_fact_hits": 4,
+      "expected_fact_total": 5,
+      "unsupported_numeric_claims": [],
+      "numeric_claims": [
+        "1.5",
+        "1.5",
+        "125"
+      ],
+      "citation_mentions": [],
+      "citation_accuracy": 0.0,
+      "citation_present": false,
+      "hallucinated": false,
+      "answer": "- **Naphtha Hydrolysis Unit (NHT)**: This unit processes 1.5 MMTPA of straight-run stabilized naphtha, which is then hydrotreated and stripped to produce a hydrocarbon feedstock for further processing.\n- **Hydrolysis Process**: The NHT unit uses a hydrotreating process to convert the naphtha into a hydrocarbon feedstock that can be used in downstream applications. This involves heating the naphtha to remove sulfur, nitrogen, and other impurities while also removing water and light components like olefins.\n- **Hydrolysis Process**: The NHT unit is designed to process 1.5 MMTPA of straight-run stabilized naphtha (C5 - 125\u00b0C). This range ensures that the hydrolysis process can handle a wide variety of naphtha compositions,"
+    },
+    {
+      "query": "explain PENEX UNIT",
+      "retrieved_pages": [
+        6,
+        5
+      ],
+      "expected_page_rank": 1,
+      "r_at_k": true,
+      "mrr": 1.0,
+      "latency_s": 7.499910899990937,
+      "first_token_s": 4.309729100001277,
+      "expected_fact_hits": 3,
+      "expected_fact_total": 3,
+      "unsupported_numeric_claims": [],
+      "numeric_claims": [
+        "0.7",
+        "89.0"
+      ],
+      "citation_mentions": [],
+      "citation_accuracy": 0.0,
+      "citation_present": false,
+      "hallucinated": false,
+      "answer": "- **Overview**: The Penex unit is a design capacity feed for the BPCL-Kochi refinery.\n- **Capacity/Feed**: It processes 0.7 MMTPA of hydro treated and stripped light naphtha from the NHT Unit.\n- **Purpose**: The purpose of the Penex unit is to process this feedstock into an isomerate product with RONC (RONC of 89.0) at a minimum.\n- **Routing**: The Penex unit's design capacity feeds directly into the CCR Platforming Unit, which in turn processes the hydro treated and stripped light naphtha from the NHT Unit.\n\n**Turndown/Operating Notes**: Not specified in the provided context."
+    },
+    {
+      "query": "explain HOT OIL SYSTEM",
+      "retrieved_pages": [
+        6,
+        3
+      ],
+      "expected_page_rank": 1,
+      "r_at_k": true,
+      "mrr": 1.0,
+      "latency_s": 12.319368099997519,
+      "first_token_s": 6.66053289998672,
+      "expected_fact_hits": 1,
+      "expected_fact_total": 3,
+      "unsupported_numeric_claims": [],
+      "numeric_claims": [
+        "2",
+        "1",
+        "3200",
+        "2",
+        "1",
+        "3200",
+        "2",
+        "1"
+      ],
+      "citation_mentions": [],
+      "citation_accuracy": 0.0,
+      "citation_present": false,
+      "hallucinated": false,
+      "answer": "- **Overview**: The Hot Oil System in the Kochi Refinery is a major heat input source for the complex. It provides all necessary heat requirements through a hot oil heater and convection coils of CCR heaters.\n- **Capacity**: This system has three (2 operating + 1 standby) identical cells with a capacity of 3200 m\u00b3/hr each, supplying cooling water to the MS block using three (2 working + 1 standby) cooling water circulation pumps of capacity 3200 m\u00b3/hr each.\n- **Purpose**: The Hot Oil System is designed to meet the process parameters and minimize heat consumption. It serves as a primary heat source for the complex's various processes, including primary distillation, secondary processing, and other related operations.\n- **Routing**: The Hot Oil System is routed through three (2 operating + 1 standby) identical cells with capacities"
+    }
+  ]
+}
